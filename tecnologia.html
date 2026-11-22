@@ -17,10 +17,10 @@
 <meta property="og:title" content="Tecnologia - DBlast">
 <meta property="og:description" content="Per sviluppatori e DBA: funzioni, architettura e stack di DBlast.">
 <meta property="og:url" content="https://www.dblast.it/tecnologia">
-<meta property="og:image" content="https://www.dblast.it/assets/risk.png">
+<meta property="og:image" content="https://www.dblast.it/assets/og.jpg">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Vai al contenuto</a>
@@ -59,10 +59,13 @@
       <div class="split-body">
         <div class="rows">
       <div class="row"><h3>Schema come grafo</h3><p>Tabelle e chiavi esterne diventano un grafo navigabile. Le tabelle vicine vengono raggruppate con un algoritmo di community detection; puoi rinominare i gruppi e spostare le tabelle da uno all’altro.</p></div>
-      <div class="row"><h3>Simulazione DDL</h3><p>DROP TABLE, DROP COLUMN, cambio di tipo, rinomina, nuova chiave esterna, cambio di chiave primaria o di nullabilità. Il report elenca problemi potenziali, effetti automatici e lo script SQL, con un punteggio di rischio e i passi consigliati.</p></div>
+      <div class="row"><h3>Simulazione DDL</h3><p>DROP TABLE, DROP COLUMN, cambio di tipo, rinomina, nuova chiave esterna, cambio di chiave primaria o di nullabilità. Il report elenca problemi potenziali, effetti automatici e lo script SQL, con un punteggio di rischio e i passi consigliati. Il percorso è in quattro passi: bozza, impatto, script e rollback, applicazione.</p></div>
       <div class="row"><h3>Check schema</h3><p>Segnala nomi poco chiari, duplicazioni e violazioni delle forme normali. Sono avvisi di stile, distinti dai rischi strutturali.</p></div>
       <div class="row"><h3>Oggetti e routine</h3><p>Schemi, tabelle, viste, viste materializzate, routine e sequenze. Se cambi una colonna usata da una routine, il rischio lo segnala.</p></div>
-      <div class="row"><h3>Strumenti</h3><p>Ricerca rapida con Ctrl+K, storico delle simulazioni, interfaccia in italiano e inglese, app desktop con aggiornamenti automatici.</p></div>
+      <div class="row"><h3>Client SQL</h3><p>Editor con autocompletamento dal catalogo, esecuzione di una o di tutte le istruzioni, transazioni automatiche o manuali con commit e rollback, più risultati con paginazione, profilo delle colonne, messaggi e piano di esecuzione (stima o esecuzione reale). Su Oracle gestisce i blocchi PL/SQL e DBMS_OUTPUT.</p></div>
+          <div class="row"><h3>Dati e modifiche</h3><p>Le modifiche alle righe restano un insieme di cambiamenti con anteprima SQL; in caso di conflitto DBlast non sovrascrive i dati altrui. Export e visualizzatore JSON per i risultati.</p></div>
+          <div class="row"><h3>Sicurezza su PROD</h3><p>Sola lettura di default, sessione di scrittura, conferma scrivendo il nome del database, DDL solo tramite revisione nel Change Studio ed esecuzione d’emergenza con motivo.</p></div>
+          <div class="row"><h3>Strumenti</h3><p>Ricerca rapida con Ctrl+K, storico delle simulazioni, interfaccia in italiano e inglese, app desktop con aggiornamenti automatici.</p></div>
         </div>
       </div>
     </div>
@@ -80,7 +83,7 @@
         <li><b>Backend</b><span>Costruisce il grafo in memoria, calcola i gruppi e simula l'impatto delle modifiche.</span></li>
         <li><b>Frontend</b><span>Canvas del grafo e pannello del rischio, nel browser o come app desktop.</span></li>
       </ol>
-      <p class="note" style="margin-top:36px">DBlast lavora sui metadati dello schema: le simulazioni non eseguono nulla sul database. Il rischio strutturale è calcolato in modo deterministico ed è separato dagli avvisi di stile, che restano consigli.</p>
+      <p class="note" style="margin-top:36px">Le simulazioni lavorano sui metadati dello schema e non eseguono nulla sul database. Il rischio strutturale è calcolato in modo deterministico ed è separato dagli avvisi di stile, che restano consigli.</p>
     </div>
   </section>
 
@@ -112,8 +115,8 @@
       <div class="split-body">
         <p class="sub">DBlast è in sviluppo attivo e cambia spesso. Non è ancora disponibile per il download.</p>
         <div class="rows">
-      <div class="row"><h3>Spiegazioni con AI</h3><p>In valutazione. Un livello che trasforma il report di una simulazione in spiegazioni operative per DBA e decisori. Il rischio resta calcolato in modo deterministico: l’AI non lo ricalcola. Non ancora implementato.</p></div>
-      <div class="row"><h3>Client multi-dialetto</h3><p>In valutazione. Una bozza di specifica prevede un uso come client: profili di connessione, sessioni, esecuzione di script ed esplorazione dei risultati.</p></div>
+      <div class="row"><h3>Consulente AI</h3><p>Opzionale. Riassume il report di una simulazione in parole semplici e propone piano di migrazione, query di verifica e rollback. Il rischio resta calcolato in modo deterministico: l’AI non lo ricalcola.</p></div>
+          <div class="row"><h3>Nuova tabella dal grafo</h3><p>In arrivo.</p></div>
         </div>
       </div>
     </div>

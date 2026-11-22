@@ -17,10 +17,10 @@
 <meta property="og:title" content="Prodotti - DBlast">
 <meta property="og:description" content="Il database come mappa, simulazione delle modifiche e consigli pratici.">
 <meta property="og:url" content="https://www.dblast.it/prodotti">
-<meta property="og:image" content="https://www.dblast.it/assets/risk.png">
+<meta property="og:image" content="https://www.dblast.it/assets/og.jpg">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Vai al contenuto</a>
@@ -46,7 +46,7 @@
   <section class="page-hero">
     <div class="wrap">
       <h1>Il tuo database, finalmente chiaro.</h1>
-      <p class="lead">DBlast ti fa vedere com'è fatto il database e ti avvisa prima che una modifica causi problemi.</p>
+      <p class="lead">DBlast ti fa vedere com'è fatto il database, ti avvisa prima che una modifica causi problemi e ti permette di lavorarci con SQL.</p>
       <div class="cta" style="margin-top:28px">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
       </div>
@@ -54,40 +54,76 @@
   </section>
 
   <section>
-    <div class="wrap feature">
-      <div class="feature-text">
-        <p class="eyebrow">Mappa</p>
-        <h2>Il database come una mappa</h2>
-        <p>Tabelle e collegamenti diventano una mappa da esplorare. Le parti collegate tra loro vengono raggruppate automaticamente e puoi riorganizzarle come preferisci. Con un clic apri una tabella e vedi tutto ciò che è collegato a lei.</p>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Funzioni principali</p>
+        <h2>Dall'analisi alla modifica.</h2>
       </div>
-      <div class="shot"><img loading="lazy" src="assets/graph.png" width="1440" height="900" alt="Mappa del database con due gruppi di tabelle colorati e i collegamenti tra loro."></div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-text">
+            <p class="eyebrow">Mappa</p>
+            <h3>Il database come una mappa</h3>
+            <p>Tabelle e collegamenti diventano una mappa da esplorare. Le parti collegate tra loro vengono raggruppate automaticamente e puoi riorganizzarle come preferisci. Con un clic apri una tabella e vedi tutto ciò che è collegato a lei.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-mappa-900.webp" srcset="assets/app-mappa-900.webp 900w, assets/app-mappa-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="552" alt="Mappa dello schema di un database di esempio: due gruppi di tabelle colorati con i collegamenti tra loro e un menu per aprire il dettaglio."></div>
+        </div>
+        <div class="feature rev">
+          <div class="feature-text">
+            <p class="eyebrow">Simulazione</p>
+            <h3>Prova una modifica in sicurezza</h3>
+            <p>Vuoi eliminare, rinominare o cambiare qualcosa? DBlast mostra cosa ne risente, quanto è rischioso e cosa fare, prima di toccare il database. Il percorso è in quattro passi: bozza, impatto, script e rollback, applicazione.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-simula-900.webp" srcset="assets/app-simula-900.webp 900w, assets/app-simula-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="581" alt="Simulazione di una modifica: punteggio di rischio 85, le tabelle e le routine coinvolte per distanza e il piano suggerito."></div>
+        </div>
+        <div class="feature">
+          <div class="feature-text">
+            <p class="eyebrow">Client SQL</p>
+            <h3>Un editor per lavorare sul database</h3>
+            <p>Scrivi ed esegui query con l’autocompletamento dal catalogo del database. I risultati mostrano il profilo di ogni colonna e, se un’istruzione è rischiosa, DBlast lo segnala già nell’editor e ti porta alla simulazione.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-editor-900.webp" srcset="assets/app-editor-900.webp 900w, assets/app-editor-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="660" alt="Editor SQL con autocompletamento, il rischio di un'istruzione ALTER TABLE segnalato nel codice e i risultati con il profilo di ogni colonna."></div>
+        </div>
+      </div>
     </div>
   </section>
-
-  <section>
-    <div class="wrap feature rev">
-      <div class="feature-text">
-        <p class="eyebrow">Simulazione</p>
-        <h2>Prova una modifica in sicurezza</h2>
-        <p>Vuoi eliminare, rinominare o cambiare qualcosa? DBlast mostra cosa ne risente, quanto è rischioso e cosa fare, prima di toccare il database.</p>
-      </div>
-      <div class="shot"><img loading="lazy" src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare."></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap feature">
-      <div class="feature-text">
-        <p class="eyebrow">Controllo</p>
-        <h2>Un check-up del database</h2>
-        <p>Con un clic DBlast passa in rassegna tutto il database, mostra lo stato generale e segnala cosa si può migliorare.</p>
-      </div>
-      <div class="shot"><img loading="lazy" src="assets/overview.png" width="1440" height="900" alt="Panoramica di un database di esempio con i numeri principali, il riquadro del rischio e i suggerimenti per i prossimi passi."></div>
-    </div>
-  </section>
-
 
   <section class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Più funzioni</p>
+        <h2>Tutto quello che serve per lavorare con calma.</h2>
+      </div>
+      <div class="figs">
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-piano-900.webp" srcset="assets/app-piano-900.webp 900w, assets/app-piano-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="533" alt="Piano di esecuzione di una query: il tempo di ogni passo, il passo più lento evidenziato e il suggerimento per un indice."></div>
+          <figcaption><strong>Piano di esecuzione</strong>Stima o esecuzione reale con il tempo di ogni passo. Il passo più lento è evidenziato e DBlast spiega perché è lento e come migliorarlo.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-dati-900.webp" srcset="assets/app-dati-900.webp 900w, assets/app-dati-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="553" alt="Tabella core.orders con modifiche in sospeso: una riga modificata, una aggiunta e una eliminata, con il pannello di dettaglio della riga."></div>
+          <figcaption><strong>Modifica dei dati</strong>Modifica, aggiungi o elimina righe. Vedi l’anteprima SQL prima di applicare e, se qualcun altro ha cambiato la riga, DBlast ti avvisa invece di sovrascrivere.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-storico-900.webp" srcset="assets/app-storico-900.webp 900w, assets/app-storico-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="546" alt="Storico delle istruzioni eseguite con database, durata, righe ed esito, e le query salvate organizzate in cartelle."></div>
+          <figcaption><strong>Storico e query salvate</strong>Le ultime 500 istruzioni e le query salvate in cartelle, con ricerca e filtro per database. Puoi rieseguirle dove erano state lanciate.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-schema-900.webp" srcset="assets/app-schema-900.webp 900w, assets/app-schema-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="461" alt="Salute dello schema: due segnalazioni da guardare e la scelta della forma normale fino a cui controllare il database."></div>
+          <figcaption><strong>Check-up dello schema</strong>Segnala tabelle e colonne da rivedere e controlla le forme normali fino al livello che scegli, con una proposta visiva della struttura.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-ai-900.webp" srcset="assets/app-ai-900.webp 900w, assets/app-ai-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="553" alt="Spiegazione AI di una modifica: rischi chiave, piano di migrazione in tre fasi, query di verifica e piano di rollback."></div>
+          <figcaption><strong>Consulente AI, se vuoi</strong>Riassume il report in parole semplici e propone un piano di migrazione, query di verifica e piano di rollback. Il livello di rischio resta calcolato dal motore, non dal modello.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-connessione-900.webp" srcset="assets/app-connessione-900.webp 900w, assets/app-connessione-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="650" alt="Finestra di nuova connessione con la scelta dell'ambiente: PROD è in sola lettura di default."></div>
+          <figcaption><strong>Connessioni e ambienti</strong>Salva più connessioni e assegna un ambiente: DEV, TEST, STAGING o PROD. Per PROD DBlast parte in sola lettura.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap split">
       <div class="split-head">
         <p class="eyebrow">Inoltre</p>
@@ -95,17 +131,19 @@
       </div>
       <div class="split-body">
         <div class="rows">
-      <div class="row"><h3>Ricerca</h3><p>Cerca qualsiasi elemento del database e ritrova le simulazioni fatte in passato.</p></div>
-      <div class="row"><h3>Compatibilità</h3><p>PostgreSQL, Oracle e Db2.</p></div>
-      <div class="row"><h3>Applicazione</h3><p>App desktop in italiano e inglese, con aggiornamenti automatici.</p></div>
-      <div class="row"><h3>Sicurezza</h3><p>Non modifica mai i tuoi dati.</p></div>
+          <div class="row"><h3>Produzione protetta</h3><p>Su PROD serve una sessione di scrittura, la conferma scrivendo il nome del database e i DDL passano dalla simulazione.</p></div>
+          <div class="row"><h3>Ricerca</h3><p>Cerca tabelle, query salvate e comandi con Ctrl K.</p></div>
+          <div class="row"><h3>Tastiera</h3><p>Scorciatoie per le azioni principali.</p></div>
+          <div class="row"><h3>Temi</h3><p>Tema scuro e tema chiaro.</p></div>
+          <div class="row"><h3>Compatibilità</h3><p>PostgreSQL, Oracle e Db2.</p></div>
+          <div class="row"><h3>Applicazione</h3><p>App desktop in italiano e inglese, con aggiornamenti automatici.</p></div>
         </div>
         <p class="note" style="margin-top:24px">Per i dettagli tecnici vai alla pagina <a href="tecnologia">Tecnologia</a>.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="wrap">
       <div class="band">
         <div>

@@ -17,10 +17,10 @@
 <meta property="og:title" content="DBlast - Modifica il tuo database senza sorprese">
 <meta property="og:description" content="Vedi il tuo database come una mappa e scopri cosa si rompe prima di modificarlo.">
 <meta property="og:url" content="https://www.dblast.it/">
-<meta property="og:image" content="https://www.dblast.it/assets/risk.png">
+<meta property="og:image" content="https://www.dblast.it/assets/og.jpg">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,7 +47,7 @@
       "url": "https://www.dblast.it/",
       "applicationCategory": "DeveloperApplication",
       "description": "DBlast mostra lo schema di un database come grafo e stima l'impatto di una modifica DDL prima di eseguirla.",
-      "image": "https://www.dblast.it/assets/risk.png",
+      "image": "https://www.dblast.it/assets/og.jpg",
       "publisher": {"@id": "https://www.dblast.it/#organization"}
     }
   ]
@@ -78,12 +78,12 @@
   <section class="hero">
     <div class="wrap">
       <h1>Modifica il tuo database <em>senza sorprese</em>.</h1>
-      <p class="lead">DBlast trasforma il database in una mappa e ti dice cosa si rompe prima che tu faccia una modifica.</p>
+      <p class="lead">L'app desktop per esplorare lo schema, simulare una modifica e lavorare con SQL, sapendo in anticipo cosa si rompe.</p>
       <div class="cta">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
         <a class="btn ghost" href="prodotti">Scopri il prodotto</a>
       </div>
-      <div class="shot"><img src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare."></div>
+      <div class="shot"><img fetchpriority="high" decoding="async" src="assets/app-hero-1200.webp" srcset="assets/app-hero-1200.webp 1200w, assets/app-hero-2400.webp 2400w" sizes="(min-width:1200px) 1080px, 100vw" width="1200" height="750" alt="Change Studio di DBlast: una modifica che elimina la chiave primaria di auth.users ha un punteggio di rischio di 85 su 100, impatto molto alto, con l'elenco delle tabelle e delle routine coinvolte."></div>
     </div>
   </section>
 
@@ -92,26 +92,49 @@
       <dl class="facts">
         <div><dt>Database</dt><dd>PostgreSQL, Oracle, Db2</dd></div>
         <div><dt>Applicazione</dt><dd>Desktop, in italiano e inglese</dd></div>
-        <div><dt>Sicurezza</dt><dd>Non modifica mai i tuoi dati</dd></div>
+        <div><dt>Sicurezza</dt><dd>Produzione in sola lettura di default</dd></div>
       </dl>
     </div>
   </section>
 
   <section id="perche">
-    <div class="wrap split">
-      <div class="split-head">
+    <div class="wrap">
+      <div class="sec-head">
         <p class="eyebrow">Perché DBlast</p>
         <h2>Sapere cosa si rompe, prima che si rompa.</h2>
-      </div>
-      <div class="split-body">
         <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un'applicazione.</p>
-        <div class="rows">
-      <div class="row"><h3>Vedi</h3><p>Il database diventa una mappa: capisci subito come sono collegati i dati, anche nelle parti che nessuno ricorda più.</p></div>
-      <div class="row"><h3>Simula</h3><p>Prova una modifica prima di farla. DBlast mostra cosa ne risente, con un punteggio di rischio facile da leggere e i passi consigliati.</p></div>
-      <div class="row"><h3>Resta al sicuro</h3><p>Le simulazioni non toccano i tuoi dati: DBlast osserva e calcola, non esegue nulla sul database.</p></div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-text">
+            <p class="eyebrow">Mappa</p>
+            <h3>Il database diventa una mappa</h3>
+            <p>Tabelle e collegamenti raggruppati in automatico: capisci subito come sono legati i dati, anche nelle parti che nessuno ricorda più.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-mappa-900.webp" srcset="assets/app-mappa-900.webp 900w, assets/app-mappa-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="552" alt="Mappa dello schema di un database di esempio: due gruppi di tabelle colorati con i collegamenti tra loro e un menu per aprire il dettaglio."></div>
+        </div>
+        <div class="feature rev">
+          <div class="feature-text">
+            <p class="eyebrow">Simulazione</p>
+            <h3>Sai cosa si rompe prima di toccare niente</h3>
+            <p>Scegli una modifica e DBlast mostra le tabelle e le routine coinvolte, con un punteggio di rischio da 0 a 100 e i passi consigliati.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-impatto-900.webp" srcset="assets/app-impatto-900.webp 900w, assets/app-impatto-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="538" alt="Grafo in modalità impatto: la tabella users da modificare, le tabelle che si rompono in rosso e quelle con effetto automatico in giallo."></div>
+        </div>
+        <div class="feature">
+          <div class="feature-text">
+            <p class="eyebrow">Client SQL</p>
+            <h3>E quando serve, lavori direttamente sul database</h3>
+            <p>Editor SQL con autocompletamento dal catalogo, risultati con il profilo delle colonne, piano di esecuzione e rischio segnalato mentre scrivi.</p>
+          </div>
+          <div class="shot"><img loading="lazy" decoding="async" src="assets/app-editor-900.webp" srcset="assets/app-editor-900.webp 900w, assets/app-editor-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="660" alt="Editor SQL con autocompletamento, il rischio di un'istruzione ALTER TABLE segnalato nel codice e i risultati con il profilo di ogni colonna."></div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="more">
+    <div class="wrap"><a class="go" href="prodotti">Vedi tutte le funzioni</a></div>
   </section>
 
   <section id="come-funziona" class="alt">
@@ -128,7 +151,7 @@
     </div>
   </section>
 
-  <section class="alt">
+  <section>
     <div class="wrap">
       <div class="band">
         <div>
