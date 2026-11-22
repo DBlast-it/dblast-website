@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://www.dblast.it/assets/risk.png">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <a class="skip" href="#main">Vai al contenuto</a>
@@ -46,7 +46,7 @@
   <section class="page-hero">
     <div class="wrap">
       <h1>Il tuo database, finalmente chiaro.</h1>
-      <p class="lead">DBlast ti fa vedere come è fatto il tuo database e ti avvisa prima che una modifica causi problemi. Pensato per chi lavora con i dati ogni giorno.</p>
+      <p class="lead">DBlast ti fa vedere com'è fatto il database e ti avvisa prima che una modifica causi problemi.</p>
       <div class="cta" style="margin-top:28px">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
       </div>
@@ -54,63 +54,65 @@
   </section>
 
   <section>
-    <div class="wrap">
-      <h2>Cosa puoi fare</h2>
-      <p class="sub">Le funzioni principali, già presenti nella versione in sviluppo.</p>
-      <div class="cards">
-        <article class="card"><span class="tag">Mappa</span><h3>Vedi il database come una mappa</h3><p>Tabelle e collegamenti diventano una mappa da esplorare. Le parti collegate tra loro vengono raggruppate automaticamente, e puoi riorganizzarle come preferisci.</p></article>
-        <article class="card"><span class="tag">Simulazione</span><h3>Prova una modifica in sicurezza</h3><p>Vuoi eliminare, rinominare o cambiare qualcosa? DBlast ti mostra cosa ne risente, quanto è rischioso e cosa fare, prima di toccare il database.</p></article>
-        <article class="card"><span class="tag">Controllo</span><h3>Un check-up del database</h3><p>Con un clic DBlast passa in rassegna tutto il database e ti segnala cosa si può migliorare.</p></article>
-        <article class="card"><span class="tag">Ricerca</span><h3>Trova tutto in un attimo</h3><p>Cerca qualsiasi elemento del database e ritrova le simulazioni fatte in passato.</p></article>
+    <div class="wrap feature">
+      <div class="feature-text">
+        <p class="eyebrow">Mappa</p>
+        <h2>Il database come una mappa</h2>
+        <p>Tabelle e collegamenti diventano una mappa da esplorare. Le parti collegate tra loro vengono raggruppate automaticamente e puoi riorganizzarle come preferisci. Con un clic apri una tabella e vedi tutto ciò che è collegato a lei.</p>
       </div>
-      <p class="note" style="margin-top:28px">Funziona con PostgreSQL, Oracle e Db2. È un'app desktop in italiano e in inglese, con aggiornamenti automatici, e non modifica mai i tuoi dati.</p>
-      <p class="note">Ti interessano i dettagli? Trovi tutto nella pagina <a href="tecnologia">Tecnologia</a>.</p>
+      <div class="shot"><img loading="lazy" src="assets/graph.png" width="1440" height="900" alt="Mappa del database con due gruppi di tabelle colorati e i collegamenti tra loro."></div>
     </div>
   </section>
 
+  <section>
+    <div class="wrap feature rev">
+      <div class="feature-text">
+        <p class="eyebrow">Simulazione</p>
+        <h2>Prova una modifica in sicurezza</h2>
+        <p>Vuoi eliminare, rinominare o cambiare qualcosa? DBlast mostra cosa ne risente, quanto è rischioso e cosa fare, prima di toccare il database.</p>
+      </div>
+      <div class="shot"><img loading="lazy" src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare."></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap feature">
+      <div class="feature-text">
+        <p class="eyebrow">Controllo</p>
+        <h2>Un check-up del database</h2>
+        <p>Con un clic DBlast passa in rassegna tutto il database, mostra lo stato generale e segnala cosa si può migliorare.</p>
+      </div>
+      <div class="shot"><img loading="lazy" src="assets/overview.png" width="1440" height="900" alt="Panoramica di un database di esempio con i numeri principali, il riquadro del rischio e i suggerimenti per i prossimi passi."></div>
+    </div>
+  </section>
+
+
   <section class="alt">
-    <div class="wrap">
-      <h2>Schermate</h2>
-      <p class="sub">L'app in azione su un database di esempio.</p>
-      <div class="gallery">
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/overview.png" width="1440" height="900" alt="Panoramica di un database di esempio con i numeri principali, il riquadro del rischio e i suggerimenti per i prossimi passi."></div>
-          <figcaption><strong>Panoramica</strong>Lo stato del database e i prossimi passi consigliati.</figcaption>
-        </figure>
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/graph.png" width="1440" height="900" alt="Mappa del database con due gruppi di tabelle colorati e i collegamenti tra loro."></div>
-          <figcaption><strong>La mappa</strong>I dati raggruppati per vicinanza.</figcaption>
-        </figure>
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/detail.png" width="1440" height="900" alt="Dettaglio di una tabella con le tabelle collegate e, a sinistra, l'elenco degli elementi del database."></div>
-          <figcaption><strong>Il dettaglio</strong>Una tabella e tutto ciò che è collegato a lei.</figcaption>
-        </figure>
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/risk.png" width="1440" height="900" alt="Report di una simulazione: punteggio di rischio 85, impatto molto alto, due possibili problemi."></div>
-          <figcaption><strong>Il report del rischio</strong>Quanto è rischiosa la modifica e cosa fare dopo.</figcaption>
-        </figure>
+    <div class="wrap split">
+      <div class="split-head">
+        <p class="eyebrow">Inoltre</p>
+        <h2>Pensato per l'uso quotidiano.</h2>
+      </div>
+      <div class="split-body">
+        <div class="rows">
+      <div class="row"><h3>Ricerca</h3><p>Cerca qualsiasi elemento del database e ritrova le simulazioni fatte in passato.</p></div>
+      <div class="row"><h3>Compatibilità</h3><p>PostgreSQL, Oracle e Db2.</p></div>
+      <div class="row"><h3>Applicazione</h3><p>App desktop in italiano e inglese, con aggiornamenti automatici.</p></div>
+      <div class="row"><h3>Sicurezza</h3><p>Non modifica mai i tuoi dati.</p></div>
+        </div>
+        <p class="note" style="margin-top:24px">Per i dettagli tecnici vai alla pagina <a href="tecnologia">Tecnologia</a>.</p>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Disponibilità</h2>
-      <div class="status">
-        <h3>In sviluppo</h3>
-        <p>DBlast è in sviluppo e l'app <strong>non è ancora scaricabile</strong>.</p>
-        <p>Se vuoi provarla quando sarà disponibile, <a href="iscrizione">iscriviti alla beta</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <h2>Cosa stiamo studiando</h2>
-      <p class="sub">Idee per il futuro di DBlast. Sono in valutazione: tempi e contenuti possono cambiare.</p>
-      <div class="cards">
-        <article class="card"><span class="tag">In valutazione</span><h3>Spiegazioni con l'intelligenza artificiale</h3><p>Un assistente che racconta il report in parole semplici, utile anche a chi non è tecnico.</p></article>
-        <article class="card"><span class="tag">In valutazione</span><h3>Lavorare sul database ogni giorno</h3><p>Usare DBlast anche per collegarsi ai database, lanciare comandi e consultare i risultati.</p></article>
+      <div class="band">
+        <div>
+          <h2>DBlast è in sviluppo</h2>
+          <p>Non è ancora disponibile. Lasciaci il tuo contatto e ti avviseremo quando potrai provarlo.</p>
+        </div>
+        <div class="cta"><a class="btn" href="iscrizione">Iscriviti alla beta</a></div>
       </div>
     </div>
   </section>

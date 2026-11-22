@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://www.dblast.it/assets/risk.png">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -77,108 +77,65 @@
 <main id="main">
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Closed beta in arrivo</p>
       <h1>Modifica il tuo database <em>senza sorprese</em>.</h1>
-      <p class="lead">DBlast trasforma il tuo database in una mappa chiara e ti dice cosa si rompe prima che tu faccia una modifica. Meno rischi, meno notti passate a sistemare errori.</p>
+      <p class="lead">DBlast trasforma il database in una mappa e ti dice cosa si rompe prima che tu faccia una modifica.</p>
       <div class="cta">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
-        <a class="btn ghost" href="#come-funziona">Scopri come funziona</a>
+        <a class="btn ghost" href="prodotti">Scopri il prodotto</a>
       </div>
-      <ul class="hero-points" aria-label="In breve">
-        <li>PostgreSQL, Oracle e Db2</li>
-        <li>Non modifica mai i tuoi dati</li>
-        <li>App desktop in italiano e inglese</li>
-      </ul>
-      <div class="shot">
-        <img src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare.">
-      </div>
+      <div class="shot"><img src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare."></div>
+    </div>
+  </section>
+
+  <section class="facts-sec">
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Database</dt><dd>PostgreSQL, Oracle, Db2</dd></div>
+        <div><dt>Applicazione</dt><dd>Desktop, in italiano e inglese</dd></div>
+        <div><dt>Sicurezza</dt><dd>Non modifica mai i tuoi dati</dd></div>
+      </dl>
     </div>
   </section>
 
   <section id="perche">
-    <div class="wrap">
-      <p class="eyebrow">Perché DBlast</p>
-      <h2>Sapere cosa si rompe, prima che si rompa.</h2>
-      <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un'applicazione. DBlast ti aiuta a evitarlo.</p>
-      <div class="cards">
-        <article class="card">
-          <span class="tag">Vedi</span>
-          <h3>Tutto a colpo d'occhio</h3>
-          <p>Il tuo database diventa una mappa: capisci subito come sono collegati i dati, anche le parti che nessuno ricorda più.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Prevedi</span>
-          <h3>Prova prima di toccare</h3>
-          <p>Simula una modifica e scopri in anticipo cosa ne risente, con un punteggio di rischio facile da leggere.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Migliora</span>
-          <h3>Consigli pratici</h3>
-          <p>DBlast ti suggerisce i passi successivi e ti segnala cosa si può sistemare per tenere il database in ordine.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Sicuro</span>
-          <h3>Nessun rischio</h3>
-          <p>Le simulazioni non toccano i tuoi dati: DBlast osserva e calcola, non esegue nulla sul tuo database.</p>
-        </article>
+    <div class="wrap split">
+      <div class="split-head">
+        <p class="eyebrow">Perché DBlast</p>
+        <h2>Sapere cosa si rompe, prima che si rompa.</h2>
+      </div>
+      <div class="split-body">
+        <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un'applicazione.</p>
+        <div class="rows">
+      <div class="row"><h3>Vedi</h3><p>Il database diventa una mappa: capisci subito come sono collegati i dati, anche nelle parti che nessuno ricorda più.</p></div>
+      <div class="row"><h3>Simula</h3><p>Prova una modifica prima di farla. DBlast mostra cosa ne risente, con un punteggio di rischio facile da leggere e i passi consigliati.</p></div>
+      <div class="row"><h3>Resta al sicuro</h3><p>Le simulazioni non toccano i tuoi dati: DBlast osserva e calcola, non esegue nulla sul database.</p></div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="come-funziona" class="alt">
     <div class="wrap">
-      <p class="eyebrow">Come funziona</p>
-      <h2>Tre passi, pochi minuti.</h2>
-      <p class="sub">Dal collegamento al report, senza configurazioni complicate.</p>
+      <div class="sec-head">
+        <p class="eyebrow">Come funziona</p>
+        <h2>Tre passi, pochi minuti.</h2>
+      </div>
       <ol class="steps">
         <li><b>Collega il database</b><span>DBlast lo legge e ne ricostruisce la struttura.</span></li>
         <li><b>Esplora la mappa</b><span>Naviga tra i dati e i loro collegamenti, raggruppati in modo ordinato.</span></li>
-        <li><b>Simula la modifica</b><span>Scegli cosa vuoi cambiare e leggi il report: rischio, problemi e cosa fare dopo.</span></li>
+        <li><b>Simula la modifica</b><span>Scegli cosa cambiare e leggi il report: rischio, problemi e cosa fare dopo.</span></li>
       </ol>
-      <p class="note" style="margin-top:26px">Funziona con PostgreSQL, Oracle e Db2, e in futuro con molti altri database. App desktop, in italiano e in inglese.</p>
-    </div>
-  </section>
-
-  <section id="schermate">
-    <div class="wrap">
-      <p class="eyebrow">Schermate</p>
-      <h2>Guardalo in azione</h2>
-      <p class="sub">Alcune schermate dell'app su un database di esempio.</p>
-      <div class="gallery">
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/overview.png" width="1440" height="900" alt="Panoramica di un database di esempio con i numeri principali, il riquadro del rischio e i suggerimenti per i prossimi passi."></div>
-          <figcaption><strong>Panoramica</strong>Lo stato del database in un'unica schermata.</figcaption>
-        </figure>
-        <figure>
-          <div class="shot"><img loading="lazy" src="assets/graph.png" width="1440" height="900" alt="Mappa del database con due gruppi di tabelle colorati e i collegamenti tra loro."></div>
-          <figcaption><strong>La mappa</strong>I dati raggruppati e collegati, da esplorare con un clic.</figcaption>
-        </figure>
-      </div>
-      <p style="margin-top:28px"><a class="go" href="prodotti">Vedi tutte le funzioni</a></p>
     </div>
   </section>
 
   <section class="alt">
     <div class="wrap">
-      <div class="status">
-        <h3>DBlast è in sviluppo</h3>
-        <p>Non è ancora disponibile. Lasciaci il tuo contatto: ti avviseremo quando potrai provarlo.</p>
-        <div class="cta" style="margin-top:18px">
-          <a class="btn" href="iscrizione">Iscriviti alla beta</a>
+      <div class="band">
+        <div>
+          <h2>DBlast è in sviluppo</h2>
+          <p>Non è ancora disponibile. Lasciaci il tuo contatto e ti avviseremo quando potrai provarlo.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <p class="eyebrow">Approfondisci</p>
-      <h2>Scopri di più</h2>
-      <div class="teasers" style="margin-top:28px">
-        <article class="card"><h3>Prodotto</h3><p>Cosa fa DBlast, le schermate e cosa arriverà.</p><a class="go" href="prodotti">Scopri il prodotto</a></article>
-        <article class="card"><h3>Tecnologia</h3><p>Per sviluppatori e DBA: tutti i dettagli tecnici.</p><a class="go" href="tecnologia">Sotto il cofano</a></article>
-        <article class="card"><h3>Servizi</h3><p>Hai un progetto? Raccontacelo, senza impegno.</p><a class="go" href="servizi">Vedi i servizi</a></article>
-        <article class="card"><h3>Chi siamo</h3><p>Le persone dietro DBlast.</p><a class="go" href="chi-siamo">Conosci il team</a></article>
+        <div class="cta"><a class="btn" href="iscrizione">Iscriviti alla beta</a></div>
       </div>
     </div>
   </section>
