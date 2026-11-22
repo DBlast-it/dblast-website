@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://www.dblast.it/assets/risk.png">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,18 +70,25 @@
         <li><a href="contatti">Contatti</a></li>
       </ul>
     </nav>
+    <a class="btn btn-sm" href="iscrizione">Iscriviti alla beta</a>
   </div>
 </header>
 
 <main id="main">
   <section class="hero">
     <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Closed beta in arrivo</p>
       <h1>Modifica il tuo database <em>senza sorprese</em>.</h1>
       <p class="lead">DBlast trasforma il tuo database in una mappa chiara e ti dice cosa si rompe prima che tu faccia una modifica. Meno rischi, meno notti passate a sistemare errori.</p>
       <div class="cta">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
         <a class="btn ghost" href="#come-funziona">Scopri come funziona</a>
       </div>
+      <ul class="hero-points" aria-label="In breve">
+        <li>PostgreSQL, Oracle e Db2</li>
+        <li>Non modifica mai i tuoi dati</li>
+        <li>App desktop in italiano e inglese</li>
+      </ul>
       <div class="shot">
         <img src="assets/risk.png" width="1440" height="900" alt="DBlast mostra l'impatto di una modifica: punteggio di rischio 85, impatto molto alto, con l'elenco dei problemi che potrebbe causare.">
       </div>
@@ -90,26 +97,27 @@
 
   <section id="perche">
     <div class="wrap">
-      <h2>Perché DBlast</h2>
+      <p class="eyebrow">Perché DBlast</p>
+      <h2>Sapere cosa si rompe, prima che si rompa.</h2>
       <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un'applicazione. DBlast ti aiuta a evitarlo.</p>
       <div class="cards">
         <article class="card">
-          <span class="tag">Vedi</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
           <h3>Tutto a colpo d'occhio</h3>
           <p>Il tuo database diventa una mappa: capisci subito come sono collegati i dati, anche le parti che nessuno ricorda più.</p>
         </article>
         <article class="card">
-          <span class="tag">Prevedi</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span>
           <h3>Prova prima di toccare</h3>
           <p>Simula una modifica e scopri in anticipo cosa ne risente, con un punteggio di rischio facile da leggere.</p>
         </article>
         <article class="card">
-          <span class="tag">Migliora</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4L12 3Z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></svg></span>
           <h3>Consigli pratici</h3>
           <p>DBlast ti suggerisce i passi successivi e ti segnala cosa si può sistemare per tenere il database in ordine.</p>
         </article>
         <article class="card">
-          <span class="tag">Sicuro</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3Z"/><path d="M9 12l2 2 4-4"/></svg></span>
           <h3>Nessun rischio</h3>
           <p>Le simulazioni non toccano i tuoi dati: DBlast osserva e calcola, non esegue nulla sul tuo database.</p>
         </article>
@@ -119,8 +127,9 @@
 
   <section id="come-funziona" class="alt">
     <div class="wrap">
-      <h2>Come funziona</h2>
-      <p class="sub">Tre passi, pochi minuti.</p>
+      <p class="eyebrow">Come funziona</p>
+      <h2>Tre passi, pochi minuti.</h2>
+      <p class="sub">Dal collegamento al report, senza configurazioni complicate.</p>
       <ol class="steps">
         <li><b>Collega il database</b><span>DBlast lo legge e ne ricostruisce la struttura.</span></li>
         <li><b>Esplora la mappa</b><span>Naviga tra i dati e i loro collegamenti, raggruppati in modo ordinato.</span></li>
@@ -132,6 +141,7 @@
 
   <section id="schermate">
     <div class="wrap">
+      <p class="eyebrow">Schermate</p>
       <h2>Guardalo in azione</h2>
       <p class="sub">Alcune schermate dell'app su un database di esempio.</p>
       <div class="gallery">
@@ -162,6 +172,7 @@
 
   <section>
     <div class="wrap">
+      <p class="eyebrow">Approfondisci</p>
       <h2>Scopri di più</h2>
       <div class="teasers" style="margin-top:28px">
         <article class="card"><h3>Prodotto</h3><p>Cosa fa DBlast, le schermate e cosa arriverà.</p><a class="go" href="prodotti">Scopri il prodotto</a></article>
@@ -174,10 +185,31 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    <span>© 2026 DBlast · Progetto indipendente</span>
-    <span class="foot-links"><a href="https://www.linkedin.com/company/dblast" target="_blank" rel="noopener">LinkedIn</a><a href="privacy">Privacy</a></span>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo.png" alt="DBlast" width="127" height="32">
+      <p>Modifica il tuo database senza sorprese.</p>
+    </div>
+    <nav aria-label="Pagine del sito">
+      <h4>Esplora</h4>
+      <ul>
+        <li><a href="prodotti">Prodotti</a></li>
+        <li><a href="tecnologia">Tecnologia</a></li>
+        <li><a href="servizi">Servizi</a></li>
+        <li><a href="chi-siamo">Chi siamo</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Contatti e note legali">
+      <h4>Contatti</h4>
+      <ul>
+        <li><a href="iscrizione">Iscriviti alla beta</a></li>
+        <li><a href="contatti">Scrivici</a></li>
+        <li><a href="https://www.linkedin.com/company/dblast" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="privacy">Privacy</a></li>
+      </ul>
+    </nav>
   </div>
+  <div class="wrap foot-bottom"><span>© 2026 DBlast · Progetto indipendente</span></div>
 </footer>
 </body>
 </html>
