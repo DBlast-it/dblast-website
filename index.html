@@ -7,7 +7,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>DBlast - Modifica il tuo database senza sorprese</title>
 <meta name="description" content="DBlast trasforma il tuo database in una mappa chiara e ti dice cosa si rompe prima di fare una modifica. Iscriviti alla beta.">
-<meta name="theme-color" content="#0b0c14">
+<meta name="theme-color" content="#ecf0f7">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://www.dblast.it/assets/og.jpg">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +59,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/"><img src="assets/logo.png" alt="DBlast - Home" width="142" height="36"></a>
+    <a class="brand" href="/"><img src="assets/logo-color.png" alt="DBlast - Home" width="118" height="30"></a>
     <nav aria-label="Principale">
       <ul>
         <li><a href="/" aria-current="page">Home</a></li>
@@ -77,13 +77,14 @@
 <main id="main">
   <section class="hero">
     <div class="wrap">
+      <div class="medal"><img src="assets/logo-icon.svg" alt="" width="46" height="46"></div>
       <h1>Modifica il tuo database <em>senza sorprese</em>.</h1>
-      <p class="lead">L'app desktop per esplorare lo schema, simulare una modifica e lavorare con SQL, sapendo in anticipo cosa si rompe.</p>
+      <p class="lead">L’app desktop per esplorare lo schema, simulare una modifica e lavorare con SQL, sapendo in anticipo cosa si rompe.</p>
       <div class="cta">
         <a class="btn" href="iscrizione">Iscriviti alla beta</a>
         <a class="btn ghost" href="prodotti">Scopri il prodotto</a>
       </div>
-      <div class="shot"><img fetchpriority="high" decoding="async" src="assets/app-hero-1200.webp" srcset="assets/app-hero-1200.webp 1200w, assets/app-hero-2400.webp 2400w" sizes="(min-width:1200px) 1080px, 100vw" width="1200" height="750" alt="Change Studio di DBlast: una modifica che elimina la chiave primaria di auth.users ha un punteggio di rischio di 85 su 100, impatto molto alto, con l'elenco delle tabelle e delle routine coinvolte."></div>
+      <div class="shot"><img fetchpriority="high" decoding="async" src="assets/app-hero-1200.webp" srcset="assets/app-hero-1200.webp 1200w, assets/app-hero-2400.webp 2400w" sizes="(min-width:1200px) 1060px, 100vw" width="1200" height="750" alt="Change Studio di DBlast: una modifica che elimina la chiave primaria di auth.users ha un punteggio di rischio di 85 su 100, impatto molto alto, con l'elenco delle tabelle e delle routine coinvolte."></div>
     </div>
   </section>
 
@@ -102,8 +103,19 @@
       <div class="sec-head">
         <p class="eyebrow">Perché DBlast</p>
         <h2>Sapere cosa si rompe, prima che si rompa.</h2>
-        <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un'applicazione.</p>
+        <p class="sub">I database crescono per anni e nessuno ricorda più cosa dipende da cosa. Basta una modifica sbagliata per fermare un’applicazione.</p>
       </div>
+      <ul class="vp">
+        <li><span class="well"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"/></svg></span><h3>Vedi</h3><p>Il database diventa una mappa: capisci subito come sono legati i dati.</p></li>
+        <li><span class="well"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></span><h3>Prevedi</h3><p>Simula una modifica e leggi il rischio, da 0 a 100, prima di toccare niente.</p></li>
+        <li><span class="well"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-5-6-5"/><path d="M12 19h8"/></svg></span><h3>Lavora</h3><p>Editor SQL, piano di esecuzione e modifica dei dati nella stessa app.</p></li>
+        <li><span class="well"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 7-7"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h9"/></svg></span><h3>Resta al sicuro</h3><p>Le simulazioni non eseguono nulla e la produzione parte in sola lettura.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
       <div class="features">
         <div class="feature">
           <div class="feature-text">
@@ -130,24 +142,24 @@
           <div class="shot"><img loading="lazy" decoding="async" src="assets/app-editor-900.webp" srcset="assets/app-editor-900.webp 900w, assets/app-editor-1800.webp 1800w" sizes="(min-width:1000px) 740px, 100vw" width="900" height="660" alt="Editor SQL con autocompletamento, il rischio di un'istruzione ALTER TABLE segnalato nel codice e i risultati con il profilo di ogni colonna."></div>
         </div>
       </div>
+      <p style="margin:56px 0 0;text-align:center"><a class="go" href="prodotti">Vedi tutte le funzioni</a></p>
     </div>
   </section>
 
-  <section class="more">
-    <div class="wrap"><a class="go" href="prodotti">Vedi tutte le funzioni</a></div>
-  </section>
-
-  <section id="come-funziona" class="alt">
+  <section id="faq">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Come funziona</p>
-        <h2>Tre passi, pochi minuti.</h2>
+      <div class="sec-head faq-head">
+        <p class="eyebrow">Domande frequenti</p>
+        <h2>Prima di iscriverti.</h2>
       </div>
-      <ol class="steps">
-        <li><b>Collega il database</b><span>DBlast lo legge e ne ricostruisce la struttura.</span></li>
-        <li><b>Esplora la mappa</b><span>Naviga tra i dati e i loro collegamenti, raggruppati in modo ordinato.</span></li>
-        <li><b>Simula la modifica</b><span>Scegli cosa cambiare e leggi il report: rischio, problemi e cosa fare dopo.</span></li>
-      </ol>
+      <div class="faq">
+        <details><summary>Quali database supporta?</summary><p>PostgreSQL, Oracle e Db2 for LUW. Per ora solo database relazionali.</p></details>
+        <details><summary>DBlast modifica il mio database?</summary><p>Le simulazioni no: lavorano sui metadati dello schema e non eseguono nulla. Con il client SQL e la modifica dei dati esegui tu le istruzioni; le connessioni PROD partono in sola lettura e per scrivere serve una conferma esplicita.</p></details>
+        <details><summary>Dove restano le mie credenziali?</summary><p>Sul tuo computer, nel portachiavi di sistema.</p></details>
+        <details><summary>Devo usare l’intelligenza artificiale?</summary><p>No. Il consulente AI è opzionale e si attiva dalle Opzioni. Il livello di rischio lo calcola sempre il motore, non il modello.</p></details>
+        <details><summary>Posso già provarlo?</summary><p>DBlast è in sviluppo e non è ancora scaricabile. Iscriviti alla beta e ti scriveremo quando ci sarà una versione da provare.</p></details>
+        <details><summary>In che lingua è?</summary><p>Italiano e inglese, come app desktop con aggiornamenti automatici.</p></details>
+      </div>
     </div>
   </section>
 
@@ -167,7 +179,7 @@
 <footer>
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <img src="assets/logo.png" alt="DBlast" width="127" height="32">
+      <img src="assets/logo-color.png" alt="DBlast" width="126" height="32">
       <p>Modifica il tuo database senza sorprese.</p>
     </div>
     <nav aria-label="Pagine del sito">
